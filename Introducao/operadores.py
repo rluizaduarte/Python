@@ -21,7 +21,7 @@ print("2 elevado a 10 =", exponenciacao)
 
 """peculiaridades
 alem da soma, o + é usado pra concatenar str
-alem da multiplicacao, o * é usado pra repetir uma str
+alem da multiplicacao, o * é usado pra repetir u:ma str
 """
 concatenacao = "joao" + " " + "paulo"
 print("joao + paulo =", concatenacao)
