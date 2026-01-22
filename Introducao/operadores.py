@@ -33,17 +33,17 @@ são usados para comparar valores
 retornam booleanos
 """
 igualdade = 10 == 10
-print("10 é igual a 10? ", igualdade)
+print("10 é igual a 10?", igualdade)
 diferenca = 10 != 8
-print("10 é diferente de 8? ", diferenca)
+print("10 é diferente de 8?", diferenca)
 maior_que = 10 > 8
-print("10 é maior que 8? ", maior_que)
+print("10 é maior que 8?", maior_que)
 menor_que = 10 < 8
-print("10 é menor que 8? ", menor_que)
+print("10 é menor que 8?", menor_que)
 maior_ou_igual = 10 >= 10
-print("10 é maior ou igual a 10? ", maior_ou_igual)
+print("10 é maior ou igual a 10?", maior_ou_igual)
 menor_ou_igual = 8 <= 10
-print("8 é menor ou igual a 10? ", menor_ou_igual)
+print("8 é menor ou igual a 10?", menor_ou_igual)
 
 """logicos
 são usados p combinar duas ou mais condições
@@ -54,13 +54,13 @@ não isso
 """
 # e logico so sera verdadeiro se os dois lados forem verdade
 e_logico = (10 > 8) and (10 == 10)
-print("(10 > 8) e (10 == 10)? ", e_logico)
+print("(10 > 8) e (10 == 10)?", e_logico)
 # ou logico vai ser verdadeiro se pelo menos um dos lados for verdadeiro tb
 ou_logico = (10 > 8) or (10 < 8)
-print("(10 > 8) ou (10 < 8)? ", ou_logico)
+print("(10 > 8) ou (10 < 8)?", ou_logico)
 # nao logico é o inverso da condição
 nao_logico = not(10 > 8)
-print("não (10 > 8)? ", nao_logico)
+print("não (10 > 8)?", nao_logico)
 
 """avaliação de curto circuito
 o python para de avaliar assim que o resultado é conhecido
@@ -69,3 +69,13 @@ apenas um "false" em um "e" torna tudo falso
 apenas um "true" em um "ou" torna tudo verdadeiro e
 a primeira condição true em um ou é o valor retornado
 """
+
+"""in e not in
+strings são iteráveis (permite navegar item por item)
+servem p ver se um item ta dentro ou n de uma string
+"""
+nome = "rielly"
+tem_r = "r" in nome
+print("tem a letra 'r' em 'rielly'?", tem_r)
+tem_z = "z" in nome
+print("tem a letra 'z' em 'rielly'?", tem_z)
