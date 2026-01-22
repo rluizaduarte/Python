@@ -27,3 +27,20 @@ concatenacao = "joao" + " " + "paulo"
 print("joao + paulo =", concatenacao)
 a_dez_vezes = "A" * 10
 print("a dez vezes ou dez vezes a =", a_dez_vezes)
+
+"""de comparação/relacionais
+são usados para comparar valores
+retornam booleanos
+"""
+igualdade = 10 == 10
+print("10 é igual a 10? ", igualdade)
+diferenca = 10 != 8
+print("10 é diferente de 8? ", diferenca)
+maior_que = 10 > 8
+print("10 é maior que 8? ", maior_que)
+menor_que = 10 < 8
+print("10 é menor que 8? ", menor_que)
+maior_ou_igual = 10 >= 10
+print("10 é maior ou igual a 10? ", maior_ou_igual)
+menor_ou_igual = 8 <= 10
+print("8 é menor ou igual a 10? ", menor_ou_igual)
