@@ -36,3 +36,13 @@ esse tab é p respeitar q seja lido somente o q ta dentro da decisão tomada
 se algo estiver fora dos blocos, será executado independente da decisão
 """
 print("fim do programa")
+
+"""pass e ...
+as vezes, por algum motivo, vc precisa criar um if
+mas ainda não sabe o q fazer dentro das condicoes
+nesse caso, vc pode usar o pass ou ...
+eles funcionam como um espaço reservado
+assim o python n vai reclamar q o if ta vazio
+quando roda n acontece nd enquanto tiver pass ou ...
+e dps vc pode voltar e preencher o q deve ser feito
+"""
