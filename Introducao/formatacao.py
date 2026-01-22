@@ -44,3 +44,27 @@ habitantes = 10000000
 estado = "pernambuco"
 string = "{0} é a capital de {e} e tem {h} habitantes"
 print(string.format(cidade, e=estado, h=habitantes))
+
+"""interpolação com %
+é uma forma antiga de formatar strings
+as variaveis são passadas após o %
+parece c o printf do c
+"""
+nome = "carlos"
+idade = 25
+mensagem = "%s tem %d anos" % (nome, idade)
+print(mensagem)
+# formatando floats
+altura = 1.80
+print("%s tem %.2f de altura" % (nome, altura))
+# formatando com largura mínima
+numero = 42
+print("o número é %5d" % numero)  # largura mínima de 5
+print("o número é %-5d!" % numero)  # alinhado à esquerda
+# preenchendo com zeros
+print("o número é %05d" % numero)  # preenchido com zeros
+# formatando porcentagens
+porcentagem = 0.2567
+print("porcentagem: %.2f%%" % (porcentagem * 100))
+# o %% é usado p representar o símbolo de porcentagem
+print("progresso: 75%% concluído")
