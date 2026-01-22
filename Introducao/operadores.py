@@ -44,3 +44,28 @@ maior_ou_igual = 10 >= 10
 print("10 é maior ou igual a 10? ", maior_ou_igual)
 menor_ou_igual = 8 <= 10
 print("8 é menor ou igual a 10? ", menor_ou_igual)
+
+"""logicos
+são usados p combinar duas ou mais condições
+retornam booleanos
+isso E aquilo
+isso OU aquilo
+não isso
+"""
+# e logico so sera verdadeiro se os dois lados forem verdade
+e_logico = (10 > 8) and (10 == 10)
+print("(10 > 8) e (10 == 10)? ", e_logico)
+# ou logico vai ser verdadeiro se pelo menos um dos lados for verdadeiro tb
+ou_logico = (10 > 8) or (10 < 8)
+print("(10 > 8) ou (10 < 8)? ", ou_logico)
+# nao logico é o inverso da condição
+nao_logico = not(10 > 8)
+print("não (10 > 8)? ", nao_logico)
+
+"""avaliação de curto circuito
+o python para de avaliar assim que o resultado é conhecido
+assim q uma condição for suficiente para determinar o resultado
+apenas um "false" em um "e" torna tudo falso
+apenas um "true" em um "ou" torna tudo verdadeiro e
+a primeira condição true em um ou é o valor retornado
+"""
