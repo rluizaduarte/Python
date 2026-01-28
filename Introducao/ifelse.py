@@ -6,6 +6,7 @@ if = se
 elif = senão se
 else = senão
 """
+
 idade = int(input("digite sua idade: "))
 # se a condição for verdade, executa o bloco de código
 if idade >= 18:
@@ -35,6 +36,7 @@ os blocos q sao executados dependem da identação
 esse tab é p respeitar q seja lido somente o q ta dentro da decisão tomada
 se algo estiver fora dos blocos, será executado independente da decisão
 """
+
 print("fim do programa")
 
 """pass e ...
@@ -45,4 +47,15 @@ eles funcionam como um espaço reservado
 assim o python n vai reclamar q o if ta vazio
 quando roda n acontece nd enquanto tiver pass ou ...
 e dps vc pode voltar e preencher o q deve ser feito
+"""
+
+"""else em outras estruturas
+o else n é exclusivo do if
+ele pode ser usado em outras estruturas de controle
+while else 
+for else
+try except else
+nesse caso, o else é executado quando a condição do loop se torna falsa
+ou seja, quando o loop termina normalmente
+se o loop for interrompido por um break, o else n é executado
 """
