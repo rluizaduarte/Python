@@ -10,6 +10,7 @@ como as aspas sao usadas pra colocar a string, pra ignorar essa funcao e realmen
 basta usar o caracter de escape barra invertida
 ou utilizar aspas simples fora e duplas dentro e vice versa
 """
+
 print("rielly", 'luiza')
 print("\"rielly\"", "'luiza'")
 
@@ -17,12 +18,14 @@ print("\"rielly\"", "'luiza'")
 representa qualquer numero inteiro
 tanto positivo quanto negativo
 """
+
 print(0, 20, sep = " e ", end = " são inteiros\n")
 
 """float
 representa qualquer numero do conjunto dos nums racionais
 tanto positivo quanto negativo
 """
+
 print(0.0, 2/5, sep = " e ", end = " são floats\n")
 
 # a função type() retorna o tipo do argumento
@@ -34,5 +37,15 @@ print(1.2, type(1.2))
 possui dois valores: verdadeiro ou falso
 é possivel comparar algo e saber se é true ou false
 """
+
 print(10 == 10.0)
 print(type(False))
+
+"""tipos imutaveis
+esses tipos, além de serem primitivos, são imutaveis
+isso significa que uma vez criado, seu valor n pode ser alterado
+por eles serem objetos, tem varias acoes
+"""
+
+nome = "rielly"
+# n da p mudar a str c nome[0] = "R" 
