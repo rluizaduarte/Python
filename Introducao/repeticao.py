@@ -63,3 +63,59 @@ while fora < 3:
         print(f"  dentro: {dentro}")
         dentro += 1
     fora += 1
+
+"""for/para
+para cada item em um canto faça isso 
+o for é usado pra iterar 
+iterar é passar cada item de um grupo
+um grupo pode ser uma lista, uma string, um range
+"""
+
+texto = "coder vision"
+# o for cria uma variavel temporaria letra q passa por cada caracter do texto
+for letra in texto:
+    print(letra)
+
+"""range 
+o range é um iteravel tb
+ele gera uma sequencia de numeros
+pode ser usado pra controlar quantas vezes um loop vai rodar
+range(inicio, fim, passo)
+por padrão o inicio é 0 e o passo é 1
+o ultimo numero n é incluido
+"""
+
+# 0, 1, 2, 3, 4
+intervalo = range(5)
+# 2, 3, 4, 5, 6, 7, 8, 9
+intervalo = range(2, 10)
+# 2, 4, 6, 8
+intervalo = range(2, 10, 2)
+# o range é iteravel ent eu posso acessar o item de indice 2 (terceiro item)
+print(intervalo[2])
+
+for numero in intervalo:
+    print(numero, end = ", ")
+print()
+
+# range é mt usado tb p pegar multiplos de um numero por causa do step
+print("multiplos de 7")
+for numero in range(0, 100, 7):
+    print(numero, end = ", ")
+print()
+
+# for com range
+for contador in range(5):
+    print(contador)
+
+"""componentes do for
+iterável - é o grupo de itens q vai ser percorrido (str, range)
+iterador - é a variavel temporaria q vai pegar cada item do iteravel (letra, numero, contador)
+next - é o processo de pegar o proximo item
+iter - é o iterador do iteravel
+"""
+
+"""while vs for
+o while é mais usado quando n se sabe quantas vezes o loop vai rodar
+enquanto no for ja se sabe qnts vezes o loop vai rodar
+"""
