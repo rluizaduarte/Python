@@ -47,3 +47,19 @@ while contador < 10:
     if contador == 5:
         continue
     print("esse numero n é 5")
+
+"""while dentro de while
+é possivel ter um loop dentro de outro loop
+cada loop funciona de forma independente
+o break e continue afetam apenas o loop mais proximo
+o while de dentro roda x vezes enquanto o de fora roda 1 vez
+"""
+
+fora = 0
+while fora < 3:
+    print(f"fora: {fora}")
+    dentro = 0
+    while dentro < 3:
+        print(f"  dentro: {dentro}")
+        dentro += 1
+    fora += 1
