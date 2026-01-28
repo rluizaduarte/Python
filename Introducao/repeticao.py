@@ -118,4 +118,6 @@ iter - é o iterador do iteravel
 """while vs for
 o while é mais usado quando n se sabe quantas vezes o loop vai rodar
 enquanto no for ja se sabe qnts vezes o loop vai rodar
+as mesmas coisas q funcionam c while funcionam c for tb
+continue, break, loops dentro de loops, else
 """
