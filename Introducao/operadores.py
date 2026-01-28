@@ -23,6 +23,7 @@ print("2 elevado a 10 =", exponenciacao)
 alem da soma, o + é usado pra concatenar str
 alem da multiplicacao, o * é usado pra repetir u:ma str
 """
+
 concatenacao = "joao" + " " + "paulo"
 print("joao + paulo =", concatenacao)
 a_dez_vezes = "A" * 10
@@ -32,6 +33,7 @@ print("a dez vezes ou dez vezes a =", a_dez_vezes)
 são usados para comparar valores
 retornam booleanos
 """
+
 igualdade = 10 == 10
 print("10 é igual a 10?", igualdade)
 diferenca = 10 != 8
@@ -52,6 +54,7 @@ isso E aquilo
 isso OU aquilo
 não isso
 """
+
 # e logico so sera verdadeiro se os dois lados forem verdade
 e_logico = (10 > 8) and (10 == 10)
 print("(10 > 8) e (10 == 10)?", e_logico)
@@ -74,8 +77,22 @@ a primeira condição true em um ou é o valor retornado
 strings são iteráveis (permite navegar item por item)
 servem p ver se um item ta dentro ou n de uma string
 """
+
 nome = "rielly"
 tem_r = "r" in nome
 print("tem a letra 'r' em 'rielly'?", tem_r)
 tem_z = "z" in nome
 print("tem a letra 'z' em 'rielly'?", tem_z)
+
+"""atribuição
+operadores de atribuição fazem uma operação ao msm tempo q atribuem
++= soma e atribui
+-= subtrai e atribui
+*= multiplica e atribui
+/= divide e atribui
+//= divide inteiro e atribui
+%= modulo e atribui
+**= exponenciação e atribui
+é a mesma coisa q dizer: 
+x = x + 1
+"""
