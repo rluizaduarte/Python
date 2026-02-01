@@ -9,7 +9,13 @@ na palavra secreta.
 Faça a contagem de tentativas do seu usuário.
 """
 
+# um detalhe q mudaria um pouco seria importar a bliblioteca os
+# essa bib permite limpar a tela do terminal
+# import os
+
 palavra_secreta = "enrolados"
+# poderia guardar as letras acertadas em uma variavel do tipo string
+# letras_acertadas = "" e ir concatenando ao longo dos acertos
 palavra_escondida = len(palavra_secreta) * "_"
 tentativas = 0
 
@@ -27,6 +33,9 @@ while not achou:
     tentativas += 1
     if letra in palavra_secreta:
         print(f"boa! acertou uma letra")
+        # uma vez q tivesse a var de letras acertadas, a logica aq poderia ser simplesmente a do comando
+        # for letra in palavra_secreta se a letra estiver em letras_acertadas, então print(letra) else print("*")
+        # ou, ainda, criar uma nova var palavra_formada p ir colocando a letra acertada ou o * ao inves de printar 
         for i in range(len(palavra_secreta)):
             if letra == palavra_secreta[i]:
                 palavra_escondida = (
@@ -42,3 +51,5 @@ while not achou:
         print(f"voce acertou a palavra secreta: {palavra_secreta}")
         print(f"voce tentou {tentativas}x")
         achou = True
+
+    # aq ou em qqr outra linha poderia usar os.system('cls') p limpar a tela
