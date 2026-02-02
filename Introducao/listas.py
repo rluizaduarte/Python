@@ -91,3 +91,11 @@ print(cores, type(cores))
 # se isso fosse uma lista, poderia usar a prox linha
 # cores[0] = "vermelho"
 # mas como é uma tupla, n pode alterar
+
+"""enumerate
+é uma funçao q retorna um objeto enumerado
+ou seja, ele gera um indice p cada elemento da lista
+muito usado em loops
+ao final, ele cria uma lista de tuplas 
+cada tupla tem o indice e o valor
+"""
