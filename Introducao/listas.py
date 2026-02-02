@@ -61,3 +61,33 @@ while True:
         else:
             print("saindo...")
             break
+
+"""desempacotamento
+imaginando q a lista seja um pacote com coisas dentro
+desempacotar seria criar novas variaveis para cada coisa dentro do pacote
+"""
+
+nomes = ["ricardo", "ryan", "victor"]
+nome1, nome2, nome3 = nomes
+# n vai funcionar se tiver menos variaveis do q itens no pacote e vice versa
+print(nome1)
+
+# tem como tb deixar o resto dos nomes em uma nova lista
+nomes = ["ricardo", "ryan", "victor", "felipe", "luiza"]
+nome1, nome2, *outros_nomes = nomes
+print(nome1)
+print(outros_nomes)
+
+"""tuples/tuplas
+são listas imutaveis
+usados p armazenar dados q n devem ser alterados
+a tupla eh um pouco mais eficiente q a lista
+um dos jeitos de criar tupla eh so sem colchetes
+ou, ainda, c parenteses no lugar dos colchetes
+"""
+
+cores = ("azul", "verde", "amarelo")
+print(cores, type(cores))
+# se isso fosse uma lista, poderia usar a prox linha
+# cores[0] = "vermelho"
+# mas como é uma tupla, n pode alterar
