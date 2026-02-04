@@ -1,4 +1,4 @@
-#formatação de strings
+# formatação de strings
 
 """formatted strings ou f-strings
 são strings q permitem variaveis e textos formatados
@@ -68,3 +68,44 @@ porcentagem = 0.2567
 print("porcentagem: %.2f%%" % (porcentagem * 100))
 # o %% é usado p representar o símbolo de porcentagem
 print("progresso: 75%% concluído")
+
+"""metodos uteis p str
+1. split - divide uma str em determinado caracter
+por padrao ele quebra a frase nos espaços em branco
+ele devolve uma lista das palavras separadas
+"""
+
+frase = "python eh uma das : linguagens mais conhecidas"
+palavras = frase.split()
+print(palavras)
+
+# o split tb pode receber um argumento q seria o q ele vai usar p dividir as strings
+palavras = frase.split(":")
+print(palavras)
+
+"""
+2. strip - remove espaços em branco no começo e no fim da str
+n remove espaços no meio da str
+"""
+
+texto = "    ola, mundo!    "
+print(f"'{texto}'")
+texto_limpo = texto.strip()
+print(f"'{texto_limpo}'")
+
+# sptrip pode recber argumentos p remover caracteres específicos
+texto2 = "###bem vindo!!!###"
+print(f"'{texto2}'")
+texto2_limpo = texto2.strip("#!")
+print(f"'{texto2_limpo}'")
+
+"""
+3. join - junta uma lista de str em uma única str
+eh o inverso do split
+tem q definir um separador p juntar as strs
+o separador é a str q vai ficar entre as palavras
+"""
+
+palavras = ["python", "eh", "uma", "linguagem", "incrivel"]
+frase = "&&&".join(palavras)
+print(frase)  
