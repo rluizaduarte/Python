@@ -99,3 +99,35 @@ muito usado em loops
 ao final, ele cria uma lista de tuplas 
 cada tupla tem o indice e o valor
 """
+
+"""iteráveis dentro de iteráveis
+listas de listas e seus indices
+uma escola tem varias salas
+cada sala tem seus alunos
+as salas sao as listas principais
+a escola é a lista externa
+cada aluno é um elemento dentro das salas q ficam dentro da escola
+"""
+
+sala_A = ["emanuel", "julio", "fernanda"]
+sala_B = ["heloisa", "bento"]
+sala_C = ["ricardo", "luiza", "maria", "joao"]
+escola = [sala_A, sala_B, sala_C]
+
+print(escola)
+print(f"alunos da sala A: {escola[0]}")
+print(f"alunos da sala B: {escola[1]}")
+print(f"alunos da sala C: {escola[2]}")
+print(f"primeiro aluno da sala A: {escola[0][0]}")
+print(f"segundo aluno da sala B: {escola[1][1]}")
+print(f"quarto aluno da sala C: {escola[2][3]}")
+
+"""é como se fosse
+vetor escola 
+  SALA A  -> vetor sala_A 
+  SALA B  -> vetor sala_B
+  SALA C  -> vetor sala_C
+e assim se forma uma matriz
+as colunas sao os alunos
+e as linhas sao as salas
+"""
