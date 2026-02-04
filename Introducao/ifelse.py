@@ -59,3 +59,14 @@ nesse caso, o else é executado quando a condição do loop se torna falsa
 ou seja, quando o loop termina normalmente
 se o loop for interrompido por um break, o else n é executado
 """
+
+"""operação ternária
+é um if else em uma linha só
+faça isso se isso for verdade e se n for faça isso
+<valor> if <condição> else <outro_valor>
+"""
+
+a = 10
+b = 20
+maior = a if a > b else b
+print(f'o maior valor entre {a} e {b} é {maior}')
