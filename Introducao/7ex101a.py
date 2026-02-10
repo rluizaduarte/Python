@@ -62,6 +62,13 @@ if len(entrada) == 11:
         digito_final_1 = resultado_1 if resultado_1 <= 9 else 0
         digito_final_2 = resultado_2 if resultado_2 <= 9 else 0
         
+        # p resolver o problema descrito la em cima
+        # poderia calcular o primeiro digito e concatenar c a string cpf_1
+
+        # apos o calculo correto dos dois digitos, uma nova var poderia ser criada
+        # cpf_gerado q seria o cpf_2 concatenado c o digito dois
+        # dessa forma o unico if aq seria cpf_enviado == cpf_gerado?
+        
         if digito_final_1 == int(entrada[-2]):
             print(f"o primeiro dígito do cpf é válido")
         else:
