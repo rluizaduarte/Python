@@ -31,15 +31,19 @@ if len(entrada) == 11:
         cpf = int(entrada)
         cpf = entrada[:9]
         soma = 0
+        # poderia ter so uma variavel resultado p armazenar td ao inves de soma, resto e digito final
         contador = 10
         for digito in cpf:
             soma = soma + int(digito) * contador
+            # soma += int(digito) * contador
             contador -= 1
         soma *= 10
         resto = soma % 11
+        # primeiro_digito = soma * 10 % 11
         primeiro_digito = resto
         if resto > 9:
             primeiro_digito = 0
+        # digito_final = primeiro_digito if resto <= 9 else 0
         if primeiro_digito == int(entrada[-2]):
             print(f"o primeiro dígito do cpf é válido")
         else:
