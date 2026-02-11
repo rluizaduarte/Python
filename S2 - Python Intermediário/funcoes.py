@@ -68,3 +68,37 @@ ola_mundo(palavra_2 = "mundo", palavra_1 = "ola")
 # mas n é possivel o contrario
 ola_mundo("ola", palavra_2="mundo")
 # ola_mundo(palavra_1 = "ola", "mundo")
+
+"""escopo
+é o local q o codigo tem acesso
+global - todo codigo é alcancavel
+local - apenas nomes do msm local podem ser alcançados
+o eh definido dentro da funcao eh local, ou seja, fica protegido la
+as variaveis dentro da funcao n existem p o codigo fora da funcao
+no entanto, as variaveis fora da funcao definidas antes existem dentro da funcao
+"""
+
+a_global = 5
+def escopo_funcao():
+    print(a_global)
+    a_local = 15
+    print(a_local)
+# o a_local n pode ser acessado aq
+# o a_global so pode ser acessado pq foi definido antes da declaracao da funcao
+# e pq so chamamos a funcao dps de declarar a_global
+escopo_funcao()
+
+# a palavra global antes da var faz c que uma var do escopo EXTERNO tenha o mesmo valor no escopo INTERNO
+x = 10
+def escopo():
+    global x
+    # x tem valor 10 ainda
+    print(x)
+    x += 10
+    # como o x da funcao eh o global, isso altera o x de fora
+    print(x)
+print(x, "antes de chamar a funcao")
+escopo()
+print(x, "dps de chamar a funcao")
+
+# o escopo mais interno sempre procura a variavel mais perto p usar
