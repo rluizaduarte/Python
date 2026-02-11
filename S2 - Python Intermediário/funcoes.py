@@ -1,0 +1,49 @@
+"""introdução às funções no python
+funcoes sao receitas prontas que dao como retorno alguma coisa
+se eu ja sei como se faz uma conta de soma, eu so jogo os nums e a receita me retorna o resultado
+o objetivo da funcao é fazer c q se tenha ja uma pessoa q faz o trabalho
+quantas vezes eu quiser
+isso evita repetir tantas vezes o mesmo codigo
+print() é uma funçao
+"""
+
+"""caracteristicas
+recebe valores como parametros (argumentos)
+pode retornar um valor especifico c base no codigo q tiver dentro
+por padrao as funcoes retornam none mas a palvra return faz vc mudar isso
+uma funcao pode ser declarada com a palavra chave def
+def nome_da_funcao(argumentos) 
+"""
+
+# definindo a função sem parametros
+def imprimir():
+    # td q ta dentro desse bloco vai ser executado quando a funcao for chamada
+    print("olá")
+# chamando a funcao e n preciso mandar nada p ela
+imprimir()
+
+# definindo uma função com parametros
+def imprimir_isso(coisa_a, coisa_b, coisa_c):
+    print(coisa_a, coisa_b, coisa_c)
+    # essas variaveis coisa a coisa b e coisa c so existem dentro da funcao
+# chamando a funcao e mandando as coisas
+imprimir_isso("ola", "hello world", 22)
+
+# a mesma funcao chamada varias vezes ecnonomiza linha pq n precisa ficar escrevendo td dnv
+def imprimir_a_soma(numero_1, numero_2):
+    print(f"o primeiro numero q vc informou eh {float(numero_1)}")
+    print(f"o segundo numero q vc informou eh {float(numero_2)}")
+    print(float(numero_1) + float(numero_2))
+# chamando a msm funcao varias vezes sem precisar ficar digitando a msm coisa
+imprimir_a_soma(5, 33)
+imprimir_a_soma(33.9, 44)
+imprimir_a_soma("78", "99")
+
+# podemos tb definir um valor padrao p o argumento ai se ele n manda o valor, ent usa o q definiu
+def saudacao(nome = "usuario"):
+    print(f"ola, {nome}!")
+    print("bem vindo")
+# sem passar nada, ele usa o nome q ja ta definido la
+saudacao() 
+# passando algo, ele muda o q ja ta definido pelo seu valor
+saudacao("rielly")
