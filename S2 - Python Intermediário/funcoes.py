@@ -47,3 +47,24 @@ def saudacao(nome = "usuario"):
 saudacao() 
 # passando algo, ele muda o q ja ta definido pelo seu valor
 saudacao("rielly")
+
+"""argumentos nomeados e nao nomeados em funcoes
+nomeado tem nome com sinal de igual
+nao nomeado recebe apenas o argumento
+os argumentos na funcao imprimir soma são posicionais
+isso significa q a ordem/posicao q eles sao colocados dentro do parentese é significante
+esses saoo nao nomeados
+os nomeados especificam q a ordem n faz diferença
+"""
+
+def ola_mundo(palavra_1, palavra_2):
+    print(palavra_1, palavra_2)
+# argumentos posicionais 
+ola_mundo("mundo", "ola")
+# arfumentos nomeados
+ola_mundo(palavra_2 = "mundo", palavra_1 = "ola")
+
+# é possível mandar argumentos posicionais antes dos argumentos nomeados na msm chamada de função
+# mas n é possivel o contrario
+ola_mundo("ola", palavra_2="mundo")
+# ola_mundo(palavra_1 = "ola", "mundo")
