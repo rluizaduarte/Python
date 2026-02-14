@@ -129,6 +129,8 @@ o *args é uma tupla, ou seja, os argumentos sao armazenados em uma tupla
 tanto faz a funcao receber 2 argumentos quanto 10
 ela vai armazenar tudo em uma tupla e usar como quiser
 o nome do *args pode ser qualquer um, mas o mais comum é usar args mesmo
+*args empacota qqr coisa q eu mandar, inlcusive uma tupla (fica uma tupla dentro de uma tupla)
+nesse caso se eu quisesse mandar uma tupla eu teria q mandar desempacotada (*minha_tupla) p ela n ficar como uma tupla dentro de outra tupla
 """
 
 def soma_varios_numeros(*args):
@@ -140,3 +142,7 @@ def soma_varios_numeros(*args):
 # a quantidade de argumentos q eu mandar n importa, a funcao vai somar tudo
 print(soma_varios_numeros(1, 2, 3, 4, 5))
 print(soma_varios_numeros(10, 20, 30))
+
+# obs a função sum() do python ja faz a soma de uma lista de nums 
+# ela pega um iteravel e retorna a soma dos elementos
+print(sum([1, 2, 3, 4, 5]))
