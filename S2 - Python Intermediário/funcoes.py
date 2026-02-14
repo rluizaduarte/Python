@@ -120,3 +120,23 @@ def soma(numero_1, numero_2):
 # posso guardar o resultado da funcao em uma variavel
 resultado = soma(33, 44)
 print(resultado)
+
+"""*args 
+args são argumentos nao nomeados
+*args é desempacotamento de argumentos, ou seja 
+serve p mandar um numero variavel de argumentos p funcao
+o *args é uma tupla, ou seja, os argumentos sao armazenados em uma tupla
+tanto faz a funcao receber 2 argumentos quanto 10
+ela vai armazenar tudo em uma tupla e usar como quiser
+o nome do *args pode ser qualquer um, mas o mais comum é usar args mesmo
+"""
+
+def soma_varios_numeros(*args):
+    # como o args é uma tupla, vou ter q percorrer ela p somar os numeros
+    soma = 0
+    for numero in args:
+        soma += numero
+    return soma
+# a quantidade de argumentos q eu mandar n importa, a funcao vai somar tudo
+print(soma_varios_numeros(1, 2, 3, 4, 5))
+print(soma_varios_numeros(10, 20, 30))
