@@ -102,3 +102,21 @@ escopo()
 print(x, "dps de chamar a funcao")
 
 # o escopo mais interno sempre procura a variavel mais perto p usar
+
+"""retorno/return
+a palavra return faz com q a funcao retorne algo
+como em mat, o retorno seria o resultado da conta, a imagem
+a funcao pode retornar qualquer tipo de valor, como string, numero, lista, dicionario, etc
+o return tb pode ser usado p sair da funcao, ou seja, o codigo dps do return n vai ser executado
+depende da função se ela vai ter retorno ou n
+"""
+
+# f(x) = a + b
+def soma(numero_1, numero_2):
+    # a funcao devolve a soma dos dois numeros e dps encerra 
+    return numero_1 + numero_2
+    # td q vier dps do return vai ser ignorado
+    print("isso n vai ser impresso")
+# posso guardar o resultado da funcao em uma variavel
+resultado = soma(33, 44)
+print(resultado)
