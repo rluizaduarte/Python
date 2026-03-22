@@ -177,3 +177,39 @@ def executar_funcao_dois(funcao, *args):
 #agora n importa qnts parametros a funcao orignal tenha
 # pq eu sempre vou empacotar e mandar os argumentos como uma tupla
 print(executar_funcao_dois(saudacao_com_idade, "rielly", 20))
+
+"""closure 
+é qnd uma funcao eh definida dentro de outra e tem acesso às variaveis da funcao externa
+mesmo q funcao externa ja tendo sido executada
+a callstack guarda o contexto de execucao
+ou seja, as variaveis da funcao externa ficam guardadas na callstack e a funcao interna tem acesso a elas
+isso é util em casos de programacao funcional
+alem disso, as closures permitem criar funcoes com comportamento personalizado
+ou seja, a funcao interna pode usar as variaveis da funcao externa p criar um comportamento unico
+"""
+
+def saudacao_personalizada(nome):
+    def saudacao():
+        return f"oi {nome}"
+    return saudacao
+# a funcao saudacao_personalizada retorna a funcao saudacao
+# e a funcao saudacao tem acesso a variavel nome da funcao externa
+saudacao_rielly = saudacao_personalizada("rielly")
+print(saudacao_rielly())
+# primeiro a funcao saudacao_personalizada atribui a funcao saudacao a variavel saudacao_rielly
+# so dps q saudacao_rielly é chamada q a funcao saudacao é executada
+# e qnd isso acontece, a funcao saudacao tem acesso a variavel nome
+
+# como a funcao retorna outra funcao é possivel tb generalizar o comportamento da funcao interna
+def saudacao_personalizada_com_idade(mensagem):
+    def saudacao(nome):
+        return f"{mensagem}, {nome}"
+    return saudacao
+# eu posso padronizar a msg e dps dinamizar o nome
+bom_dia = saudacao_personalizada_com_idade("bom dia")
+boa_tarde = saudacao_personalizada_com_idade("boa tarde")
+print(bom_dia("rielly"))
+print(boa_tarde("rielly"))
+print(bom_dia("maria"))
+#posso tb chamar as duas funcoes de uma vez usando a msm funcao externa
+print(saudacao_personalizada_com_idade("olá")("rielly"))
