@@ -33,8 +33,21 @@ pessoa = {
     # ]
 }
 
-# acessando itens do dicionario (dados da pessoa)
+"""manipulando chaves e valores
+"""
+
+# acessar itens do dicionario (dados da pessoa)
 print(pessoa["nome"])
 # cada item do dic
 for chave in pessoa:
     print(chave, pessoa[chave])
+
+# adcionar itens ao dicionario 
+pessoa["email"] = "beatriz@email.com"
+#nome do dic[chave inexistente] = valor
+print(pessoa)
+
+# apagar itens do dicionario
+del pessoa["peso"]
+# del nome do dic[chave]
+print(pessoa)
