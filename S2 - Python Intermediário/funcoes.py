@@ -146,3 +146,34 @@ print(soma_varios_numeros(10, 20, 30))
 # obs a função sum() do python ja faz a soma de uma lista de nums 
 # ela pega um iteravel e retorna a soma dos elementos
 print(sum([1, 2, 3, 4, 5]))
+
+"""higher order functions/funções de primeira classe
+sao funcoes q podem receber outras funcoes como argumento
+ou retorna uma funcao como o proprio resultado
+a vantagem disso é tornar mais generico e felixicel o codigo
+funcoes sao da mesma classe q variaveis, numeros, strings
+portanto, uma variavel pode receber uma funcao como valor
+"""
+
+def saudacao(nome):
+    return f"oi {nome}"
+# nesse caso a variavel vai apontar p funcao saudacao
+minha_funcao = saudacao
+# posso chamar a funcao usando a variavel
+print(minha_funcao("rielly"))
+
+#da mssm forma eu posso colocar uma funcao como parametro de outra funcao
+def executar_funcao(funcao, parametro):
+    return funcao(parametro)
+# ai eu posso passar a funcao saudacao como argumento p funcao executar_funcao
+print(executar_funcao(saudacao, "rielly"))
+
+# mas pode ser q a funcao original tenha mais parametros
+def saudacao_com_idade(nome, idade):
+    return f"oi {nome}, vc tem {idade} anos"
+# p generalizar o numero de parametros, posso simplesmente usar *args
+def executar_funcao_dois(funcao, *args):
+    return funcao(*args)
+#agora n importa qnts parametros a funcao orignal tenha
+# pq eu sempre vou empacotar e mandar os argumentos como uma tupla
+print(executar_funcao_dois(saudacao_com_idade, "rielly", 20))
