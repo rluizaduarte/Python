@@ -81,3 +81,11 @@ print(pessoa.get("sobrenome"))
 # mas, por padrao, se a chave n existir, ele retorna None
 # posso passar um segundo parametro p o get() q seria o valor padrao caso a chave n exista
 print(pessoa.get("peso", "peso nao encontrado"))
+
+pessoa_copia = pessoa.copy()
+print(pessoa_copia)
+# retorna uma copia rasa (shallow copy)
+
+# atribuição: aponta p mesmo canto. se eu alterar um, o original altera
+# shallow copy: cria um novo, mas os itens mutaveis ainda apontam p mesma ref. mudar a lista em um altera no outro
+# deep copy: cria um novo e os itens mutaveis tb sao copiados. muda em um n muda no outro 
