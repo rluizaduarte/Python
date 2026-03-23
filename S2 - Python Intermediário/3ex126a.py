@@ -37,15 +37,23 @@ for dicionario in perguntas:
 {dicionario['Pergunta']}
 """)
     
+    # p substituir a necessidade de uma variavel contadora basta usar o enumerate
+    # for i, opcao in enumerate(dicionario["Opções"]):
+    # print(f"{i}) {opcao}")
     alternativa = 0
     for opcao in dicionario["Opções"]:
         print(f"{alternativa}) {opcao}")
         alternativa += 1
-
     print()
+
+    # poderia criar uma variavel q guarda o numero de opções disponiveis pra aquela pergunta
+    # assim as perguntas poderiam ter quantidades diferentes de alternativas
+    # e a verificação seria baseada na qtd de opcoes 
+    # qtd_opcoes = len(dicionario["Opções"])
+    # while resposta_usuario > qtd_opcoes ou algoo do tipo
     resposta_usuario = input()
     while resposta_usuario not in "0, 1, 2, 3":
-        print("Resposta inválida, tente novamente")
+        print("tem q colocar uma das alternativas")
         resposta_usuario = input()
     print()
 
