@@ -51,3 +51,33 @@ print(pessoa)
 del pessoa["peso"]
 # del nome do dic[chave]
 print(pessoa)
+
+# o dunder len() retorna o numero de chaves do dic
+print(pessoa.__len__())
+print(len(pessoa))
+
+"""métodos úteis p dicionarios
+"""
+
+print(pessoa.keys())
+#retorna as chaves
+
+print(pessoa.values())
+#retorna os valores
+
+print(pessoa.items())
+#retorna uma lista de tuplas q cada tupla é um par chave-valor
+# uma boa forma de percorrer o dicionario eh usando esse metodo
+for chave, valor in pessoa.items():
+    print(chave, valor)
+
+print(pessoa.setdefault("sobrenome", "mendonca"))
+# o setdefault() é um metodo q recebe uma chave e um valor
+# se a chave n existir no dic, ele adiciona a chave com o valor e retorna
+# se a chave ja existir, ele n altera o valor e retorna o valor existente
+
+print(pessoa.get("sobrenome"))
+# tambem recebe a chave e retorna o valor
+# mas, por padrao, se a chave n existir, ele retorna None
+# posso passar um segundo parametro p o get() q seria o valor padrao caso a chave n exista
+print(pessoa.get("peso", "peso nao encontrado"))
