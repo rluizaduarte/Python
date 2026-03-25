@@ -27,6 +27,16 @@ lista_de_listas_de_inteiros = [
 ]
 
 def encontrar_primeiro_repetido(lista):
+    # na solucao do prof ele usa um set p armazenar numero q ja viu
+    # numeros_verificados = set()
+    # p cada numero q ele percorre na lista, ele verifica se o numero ja ta no set
+    # se tiver, ele retorna o numero
+    # se n tiver, ele adiciona o numero no set e continua a busca
+    # for numero in lista:
+    #     if numero in numeros_verificados:
+    #         return numero
+    #     numeros_verificados.add(numero)
+    # return -1
     for indice, numero in enumerate(lista):
         if numero in lista[:indice]:
             return numero
