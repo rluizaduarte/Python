@@ -80,3 +80,43 @@ print(conjunto_sem_duplicados)
 conjunto_sem_duplicados.clear()
 print(conjunto_sem_duplicados)
 
+"""operações de conjuntos
+os sets tem operadores e metodos p fzr as operaçoes de conjuntos da matematica
+união, interseção, diferença e diferença simétrica
+union, intersection, difference e symmetric_difference
+"""
+
+set_1 = {1, 2, 3}
+set_2 = {3, 4, 5}
+
+# faz a união dos dois sets
+# junta todos os elementos dos dois sets sem repetição
+set_3 = set_1.union(set_2)
+print(set_3)
+
+# faz a interseção dos dois sets
+# retorna apenas os elementos q estao nos dois sets
+set_4 = set_1.intersection(set_2)
+# nesse caso o unico elemento q esta nos dois sets é o 3
+print(set_4)
+
+# faz a diferença entre os dois sets
+# retorna os elementos q estao apenas no da esquerda
+set_5 = set_1.difference(set_2)
+# aq os elementos q estao no set_1 mas n estao no set_2 sao o 1 e o 2
+print(set_5)
+
+#faz a diferenca simetrica
+# os elementos q estao em um dos sets mas n estao nos dois
+set_6 = set_1.symmetric_difference(set_2)
+# ent os elementos seriam o 1 e o 2, q so tao no set_1, o 4 e o 5, q so tao no set_2
+
+"""operadores
+da p usar somente um operador ao inves do metodo
+| p união
+& p interseção
+- p diferença
+^ p diferença simétrica
+ou seja
+set_1 | set_2 == set_1.union(set_2)
+"""
