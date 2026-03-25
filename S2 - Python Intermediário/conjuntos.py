@@ -30,3 +30,27 @@ print(conjunto_c)
 # passando um iteravel usando chaves ele considera o iteravel inteiro como um elemento do set
 conjunto_d = {"python"}
 print(conjunto_d)
+
+"""caracteristicas dos sets
+geralmente sao mt eficientes p remover valores duplicados de um iteravel
+naturalmente sao mt usados p fzr operacoes de conjuntos 
+os sets sao iteraveis
+no entanto, o problema é q eles n tem ordem garantida
+ent se eu quiser manter a ordem, eu teria q usar outra ferramenta
+outro problema tb é que n ele n aceita elementos mutaveis
+m existe set dentro de set, lista dentro de set, dicionario dentro de set, etc
+eles tb n tem indices
+"""
+
+#suponha uma lista com valores duplicados
+lista_com_duplicados = [1, 2, 3, 4, 5, 1, 2, 3]
+print(lista_com_duplicados)
+# p remover os duplicados posso simplesmente converter a lista em um set
+conjunto_sem_duplicados = set(lista_com_duplicados)
+print(conjunto_sem_duplicados)
+
+# sets sao iteraveis. posso usar for, in, not in
+for elemento in conjunto_sem_duplicados:
+    print(elemento)
+print(3 in conjunto_sem_duplicados)
+print(4 not in conjunto_sem_duplicados)
