@@ -54,3 +54,29 @@ for elemento in conjunto_sem_duplicados:
     print(elemento)
 print(3 in conjunto_sem_duplicados)
 print(4 not in conjunto_sem_duplicados)
+
+"""metodos
+assim como os dicionarios, os sets tem metodos uteis
+os principais sao add, update, clear e discard
+"""
+
+# o add() adiciona um elemento ao set
+conjunto_sem_duplicados.add(6)
+print(conjunto_sem_duplicados)
+
+# o update() adiciona varios elementos ao set
+# ele recebe um iteravel
+conjunto_sem_duplicados.update([7, 8, 9])
+print(conjunto_sem_duplicados)
+#claramente n adiciona elementos q ja tem no set
+conjunto_sem_duplicados.update([1, 2, 3])
+print(conjunto_sem_duplicados)
+
+# o discard() remove um elemento especifico do set
+conjunto_sem_duplicados.discard(9)
+print(conjunto_sem_duplicados)
+
+# o clear() remove todos os elementos do set
+conjunto_sem_duplicados.clear()
+print(conjunto_sem_duplicados)
+
